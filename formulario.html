@@ -1,0 +1,75 @@
+<HTML>
+<head>
+	<title>Formulario></title>
+
+<style type="text/css">
+
+*{font-family: Arial;}
+
+h1{text-align: center;
+	font-size: 1.2em;
+	text-decoration: underline;}
+form{text-align: center;}
+
+div{border-style: solid;
+	border-color: green;
+	border-width: 0.2em;
+	margin-top: 2em;
+	margin-right: 10em;}
+
+</style>
+
+</head>
+
+<body bgcolor="skyblue">
+
+<br>
+<h1>LLenar el siguiente Formulario</h1>
+<h1>Para inscribirse</h1>
+<br>
+<form name="Formulario">
+
+<spam>Nonbre</spam><input type="text" id="nombre" placeholder="Primer nombre" maxlength="15">
+<br>
+<br>
+
+<spam>Apellido</spam><input type="text" id="Apell" placeholder="Primer Apellido" maxlength="15">
+<br>
+<br>
+
+<spam>ID</spam><input type="text" id="id" placeholder="# de identidad" maxlength="15">
+<br>
+<br>
+
+<spam>Sexo</spam>
+<spam>Femenino</spam><input type="radio" id="femenino">
+<spam>Masculino</spam><input type="radio" id="masculino">
+<br>
+<br>
+
+<input type="button" onclick="activar()" value="enviar">
+</form>
+<script>
+funtion activar(){
+var nomb=document.getElementsById("nombre").value; if(nomb="")
+{alert("Escriba su nombre");return;}
+var apelli=document.getElementsById("apell").value; if(apelli="")
+{alert("Escriba su apellido");return;}
+var id=document.getElementsById("id").value;
+if(id="")
+{alert("Escriba su # de identidad");return}
+var sex=document.getElementsById("femenino");
+var sexm=document.getElementsById("masculino");
+if ((!sex.checked) &&(!sexm.cheked))
+{alert("Seleccionar tipo de sexo");return}
+}
+</script>
+<center>
+
+
+<a href="index.html">Inicio</a>
+
+
+</center>
+</body>
+</HTML>
